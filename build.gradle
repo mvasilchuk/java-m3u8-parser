@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+
+    }
+}
+
+group = 'com.mvas'
+version = '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+
+    compile 'org.jetbrains:annotations-java5:15.0'
+    compile 'commons-io:commons-io:2.4'
+}

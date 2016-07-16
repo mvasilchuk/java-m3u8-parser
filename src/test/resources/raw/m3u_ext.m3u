@@ -1,0 +1,187 @@
+#EXTM3U url-tvg="http://61.50.196.42/iptv/jtv.zip" deinterlace=1 tvg-shift=-1
+#EXTINF:-1 tvg-name=Украина , Украина
+http://61.50.196.43:9898/udp/225.2.0.10:1234
+#EXTINF:-1 , Q-TV
+http://61.50.196.46:9898/udp/224.11.0.111:1234
+#EXTINF:-1 , Мега
+http://61.50.196.45:9898/udp/225.2.0.97:1234
+#EXTINF:-1 tvg-name=1_1_международный , 1+1
+http://61.50.196.45:9898/udp/225.2.0.109:1234
+#EXTINF:-1 tvg-logo="Новый" ,Новый канал
+http://61.50.196.42:9898/udp/224.11.0.116:1234
+#EXTINF:-1 , НТН
+http://61.50.196.46:9898/udp/224.11.0.124:1234
+#EXTINF:-1 , Плюс Плюс
+http://61.50.196.43:9898/udp/224.11.0.113:1234
+#EXTINF:-1 tvg-name=ICTV_(Украина) ,ICTV
+http://61.50.196.46:9898/udp/224.11.0.105:1234
+#EXTINF:-1 tvg-name=СТБ , СТБ
+http://61.50.196.46:9898/udp/224.11.0.101:1234
+#EXTINF:-1 tvg-name=Тонис , Тонис
+http://61.50.196.44:9898/udp/224.11.0.118:1234
+#EXTINF:-1 , К1
+http://61.50.196.45:9898/udp/224.11.0.125:1234
+#EXTINF:-1 , К2
+http://61.50.196.42:9898/udp/224.11.0.129:1234
+#EXTINF:-1 , БТБ
+http://61.50.196.46:9898/udp/224.11.0.139:1234
+#EXTINF:-1 , RU Music
+http://61.50.196.46:9898/udp/224.11.0.88:1234
+#EXTINF:-1 , O-TV
+http://61.50.196.42:9898/udp/224.11.0.107:1234
+#EXTINF:-1 , ZOOM
+http://61.50.196.45:9898/udp/224.11.0.127:1234
+#EXTINF:-1 tvg-name=MUSIC_Box_TV , Music Box UA
+http://61.50.196.43:9898/udp/224.11.0.121:1234
+#EXTINF:-1 tvg-name=М-1, М1
+http://61.50.196.42:9898/udp/224.11.0.102:1234
+#EXTINF:-1 , A-ONE
+http://61.50.196.46:9898/udp/224.11.0.83:1234
+#EXTINF:-1 , М2
+http://61.50.196.42:9898/udp/224.11.0.106:1234
+#EXTINF:-1 ,Глас
+http://61.50.196.42:9898/udp/224.11.0.81:1234
+#EXTINF:-1 tvg-name=2_2_(кино) , 2+2
+http://61.50.196.44:9898/udp/225.2.0.80:1234
+#EXTINF:-1 tvg-name=5_канал_(Украина) tvg-logo="5 канал" ,Пятый канал
+http://61.50.196.45:9898/udp/224.11.0.146:1234
+#EXTINF:-1 tvg-name=NewsOne, News ONE
+http://61.50.196.44:9898/udp/224.11.0.86:1234
+#EXTINF:-1 , Первый деловой
+http://61.50.196.46:9898/udp/224.11.0.110:1234
+#EXTINF:-1 tvg-name=Business_(Украина) , Business
+http://61.50.196.43:9898/udp/224.11.0.94:1234
+#EXTINF:-1 , Новости 24
+http://61.50.196.43:9898/udp/224.11.0.120:1234
+#EXTINF:-1 , УБР
+http://61.50.196.43:9898/udp/224.11.0.114:1234
+#EXTINF:-1 , Интер
+http://61.50.196.42:9898/udp/225.2.0.132:1234
+#EXTINF:-1 tvg-name=Первый_национальный_(Украина) , Перший канал
+http://61.50.196.45:9898/udp/225.2.0.137:1234
+#EXTINF:-1 tvg-name=Зоопарк , Zooпарк
+
+#EXTINF:-1 , Мультимания
+http://61.50.196.46:9898/udp/239.0.3.59:1234
+#EXTINF:-1 , Мать и дитя
+http://61.50.196.44:9898/udp/239.172.20.135:1234
+#EXTINF:-1 tvg-name=Драйв_ТВ, Драйв
+http://61.50.196.43:9898/udp/233.191.134.140:1234
+#EXTINF:-1 , Охота и рыбалка
+http://61.50.196.44:9898/udp/233.191.134.141:1234
+#EXTINF:-1 , Здоровье
+http://61.50.196.44:9898/udp/233.191.134.142:1234
+#EXTINF:-1 tvg-name=Усадьба , Усадьба ТВ
+http://61.50.196.43:9898/udp/233.191.134.143:1234
+#EXTINF:-1 , Домашние животные
+http://61.50.196.44:9898/udp/233.191.134.137:1234
+#EXTINF:-1 , Enter фильм
+http://61.50.196.45:9898/udp/224.11.0.128:1234
+#EXTINF:-1 , Пиксель ТВ
+http://61.50.196.46:9898/udp/224.11.0.130:1234
+#EXTINF:-1 , Карусель
+http://61.50.196.44:9898/udp/239.0.3.68:1234
+#EXTINF:-1 , Гамма
+http://61.50.196.45:9898/udp/224.11.0.131:1234
+#EXTINF:-1 , Комеди ТВ
+http://61.50.196.44:9898/udp/239.0.3.212:1234
+#EXTINF:-1 , Камедия
+http://61.50.196.45:9898/udp/239.172.6.103:1234
+#EXTINF:-1 , Малятко-TV
+http://61.50.196.45:9898/udp/239.0.3.236:1234
+#EXTINF:-1 tvg-name=National_Geographic tvg-logo="National Geographic" ,$ National Geographic
+http://61.50.196.44:9898/udp/239.172.5.105:1234
+#EXTINF:-1 tvg-name=Nat_Geo_WILD tvg-logo="Nat Geo Wild" ,$ Nat Geo WILD
+http://61.50.196.45:9898/udp/239.172.21.41:1234
+#EXTINF:-1 tvg-name=Viasat_Explorer tvg-logo="Viasat Explorer" ,$ Viasat Explorer
+http://61.50.196.44:9898/udp/239.0.3.30:1234
+#EXTINF:-1 tvg-name=Viasat_Sport tvg-logo="Viasat Sport" ,$ Viasat Sport
+http://61.50.196.46:9898/udp/239.172.20.128:1234
+#EXTINF:-1 tvg-name=Viasat_History tvg-logo="Viasat History" ,$ Viasat History
+http://61.50.196.46:9898/udp/239.0.3.31:1234
+#EXTINF:-1 tvg-name=Viasat_Nature_CEE tvg-logo="Viasat History" ,$ Viasat Nature
+http://61.50.196.42:9898/udp/239.0.3.28:1234
+#EXTINF:-1 tvg-name=TV_1000_Action tvg-logo=TV1000 Action ,$ TV1000 Action
+http://61.50.196.46:9898/udp/239.0.3.27:1234
+#EXTINF:-1 tvg-name=Первый_Автомобильный tvg-logo="Первый Автомобильный" , $ Первый Автомобильный
+http://61.50.196.45:9898/udp/224.11.0.87:1234
+#EXTINF:-1 tvg-logo="НТА" ,$ НТА
+
+#EXTINF:-1 tvg-logo="Рада" ,$ Рада
+http://61.50.196.45:9898/udp/224.11.0.84:1234
+#EXTINF:-1 tvg-name=ТВi tvg-logo="ТВi" ,$ ТВi
+
+#EXTINF:-1 tvg-logo="УНИАН-ТВ" ,$ УНИАН-ТВ
+http://61.50.196.45:9898/udp/224.2.0.104:1234
+#EXTINF:-1 tvg-name=УТР tvg-logo=УТР-UA ,$ УТР
+
+#EXTINF:-1 tvg-name=ЧП_info tvg-logo="ЧП.info" ,$ ЧП.INFO
+
+#EXTINF:-1 tvg-name=Extreme_Sports tvg-logo="Extreme Sport" ,$ Extreme Sport
+
+#EXTINF:-1 tvg-name=Zone_Reality tvg-logo="Zone Reality" ,$ ZONE Realty
+
+#EXTINF:-1 tvg-name=Россия_2_(Спорт) tvg-logo="Россия 2" ,$ Россия 2
+http://61.50.196.45:9898/udp/239.0.3.64:1234
+#EXTINF:-1 tvg-name=Россия_Культура tvg-logo="Россия К" ,$ Россия Культура
+http://61.50.196.46:9898/udp/239.0.3.62:1234
+#EXTINF:-1 tvg-name=Музыка_Первого tvg-logo="Музыка Первого" ,$ Музыка Первого
+http://61.50.196.44:9898/udp/239.0.3.170:1234
+#EXTINF:-1 tvg-name=Disney_Channel tvg-logo="Disney Channel" ,$ Disney channel
+http://61.50.196.43:9898/udp/239.172.20.133:1234
+#EXTINF:-1 tvg-name=Перец tvg-logo="Перец" ,$ Перец
+http://61.50.196.43:9898/udp/239.0.3.67:1234
+#EXTINF:-1 tvg-name=Канал_2x2 tvg-logo="2x2" ,$ 2х2
+http://61.50.196.42:9898/udp/224.11.0.23:1234              
+#EXTINF:-1 tvg-name=Discovery tvg-logo="Discovery Channel" ,$ Discovery Channel
+http://61.50.196.42:9898/udp/224.11.0.180:1234
+#EXTINF:-1 tvg-logo="Discovery ID" ,$ Discovery ID
+http://61.50.196.44:9898/udp/239.172.5.107:1234
+#EXTINF:-1 tvg-name=Animal_Planet tvg-logo="Animal Planet" ,$ Animal Planet
+http://61.50.196.46:9898/udp/239.172.5.108:1234
+#EXTINF:-1 tvg-name=СТС tvg-logo="СТС" ,$ СТС
+http://61.50.196.42:9898/udp/239.172.81.12:1234
+#EXTINF:-1 tvg-name=Спорт_ПЛЮС tvg-logo="НТВ Спорт плюс" ,$ Спорт+
+http://61.50.196.43:9898/udp/239.172.20.130:1234
+#EXTINF:-1 tvg-name=Eurosport tvg-logo="Eurosport" ,$ Eurosport
+http://61.50.196.42:9898/udp/224.11.0.166:1234
+#EXTINF:-1 tvg-name=VH1_Classic tvg-logo="VH 1" ,$ VH1 Classic
+http://61.50.196.44:9898/udp/239.172.21.31:1234
+#EXTINF:-1 tvg-name=France_24 tvg-logo="France 24" ,$ France 24
+http://61.50.196.46:9898/udp/233.191.134.90:1234
+#EXTINF:-1 tvg-name=Mezzo tvg-logo="Mezzo" ,$ Mezzo
+http://61.50.196.44:9898/udp/233.191.134.94:1234
+#EXTINF:-1 tvg-logo="Zone Romantica" ,$ CBS Drama
+
+#EXTINF:-1 tvg-logo="Новая Одесса" ,$ Новая Одесса
+http://61.50.196.44:9898/udp/239.0.3.8:1234
+#EXTINF:-1 tvg-logo="Моя Одесса" ,$ Моя Одесса
+http://61.50.196.45:9898/udp/239.0.3.12:1234
+#EXTINF:-1 tvg-logo="Репортер" ,$ Репортер
+http://61.50.196.43:9898/udp/239.0.3.11:1234
+#EXTINF:-1 tvg-logo="Круг" ,$ Круг
+http://61.50.196.44:9898/udp/239.0.3.4:1234
+#EXTINF:-1 tvg-logo="Реноме" ,$ Реноме
+http://61.50.196.42:9898/udp/239.0.3.14:1234
+#EXTINF:-1 tvg-logo="Одесса" ,$ Одесса
+http://61.50.196.45:9898/udp/239.0.3.10:1234
+#EXTINF:-1 tvg-logo=-Radio ,Radio Chillout
+http://rl.radiola.od.ua:10001/
+#EXTINF:-1 tvg-logo=-Radio ,Radio Rock
+http://rl.radiola.od.ua:10010/
+#EXTINF:-1 tvg-logo=-Radio ,Radio Dance
+http://rl.radiola.od.ua:10011/
+#EXTINF:-1 tvg-logo=-Radio ,Radio Djmix
+http://rl.radiola.od.ua:10100/
+#EXTINF:-1 tvg-logo=-Radio ,Radio Rap
+http://rl.radiola.od.ua:10101/
+#EXTINF:-1 tvg-logo=-Radio ,Radio Jazz
+http://rl.radiola.od.ua:10110/
+#EXTINF:-1 tvg-logo=-Radio ,Radio Pop
+http://rl.radiola.od.ua:10111/
+#EXTINF:-1 tvg-logo=-Radio ,Radio NasheRU
+http://rl.radiola.od.ua:11000/
+#EXTINF:-1 tvg-logo=-Radio ,Radio Hit
+http://rl.radiola.od.ua:11001/
+#EXTINF:-1 tvg-logo=-Radio ,Radio Lounge
+http://rl.radiola.od.ua:11010/

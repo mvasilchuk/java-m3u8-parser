@@ -1,0 +1,7 @@
+#EXTM3U url-tvg="http://61.50.196.42/iptv/jtv.zip" deinterlace=1 tvg-shift=-1
+#EXTINF:-1 tvg-name=Украина , Украина
+http://61.50.196.43:9898/udp/225.2.0.10:1234
+#EXTINF:-1 , Q-TV
+http://61.50.196.46:9898/udp/224.11.0.111:1234
+#EXTINF:-1 , Мега
+http://61.50.196.45:9898/udp/225.2.0.97:1234
