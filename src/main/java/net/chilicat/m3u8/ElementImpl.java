@@ -13,9 +13,12 @@ final class ElementImpl implements Element {
     private final boolean discontinuity;
     private final String title;
     private final long programDate;
+    private final TvGuideAttributes tvGuideAttributes;
+    private final StreamAttributes streamAttributes;
 
     public ElementImpl(PlaylistInfo playlistInfo, EncryptionInfo encryptionInfo, double duration, URI uri,
-    		String title, long programDate, boolean discontinuity) {
+    		String title, long programDate, boolean discontinuity,
+                       TvGuideAttributes tvGuideAttributes, StreamAttributes streamAttributes) {
         if (uri == null) {
             throw new NullPointerException("uri");
         }
@@ -33,6 +36,8 @@ final class ElementImpl implements Element {
         this.title = title;
         this.discontinuity=discontinuity;
         this.programDate = programDate;
+        this.tvGuideAttributes = tvGuideAttributes;
+        this.streamAttributes = streamAttributes;
     }
 
     public String getTitle() {
@@ -79,6 +84,16 @@ final class ElementImpl implements Element {
     }
 
     @Override
+    public TvGuideAttributes getTvGuideAttributes() {
+        return tvGuideAttributes;
+    }
+
+    @Override
+    public StreamAttributes getStreamAttributes() {
+        return streamAttributes;
+    }
+
+    @Override
     public String toString() {
         return "ElementImpl{" +
                 "playlistInfo=" + playlistInfo +
@@ -105,7 +120,7 @@ final class ElementImpl implements Element {
             return programId;
         }
 
-        public int getBandWitdh() {
+        public int getBandWidth() {
             return bandWidth;
         }
 

@@ -82,4 +82,7 @@ public interface Element {
      */
     public long getProgramDate();
 
+    TvGuideAttributes getTvGuideAttributes();
+    StreamAttributes getStreamAttributes();
+
 }

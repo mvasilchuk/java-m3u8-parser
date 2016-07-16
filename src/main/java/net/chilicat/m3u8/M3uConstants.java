@@ -149,7 +149,10 @@ final class M3uConstants {
             throw new AssertionError();
         }
 
-        final static Pattern EXTINF = Pattern.compile(tagPattern(M3uConstants.EXTINF) + "\\s*(-1|[0-9\\.]*)\\s*(?:,((.*)))?");
+        final static Pattern EXTINF = Pattern.compile(tagPattern(M3uConstants.EXTINF) +
+                "\\s*(-1|[0-9\\.]*)(?:\\s*)?(.*?)?(?:\\s*)?,(?:\\s*)?(.*)?");
+
+        final static Pattern EXTINF_ATTR = Pattern.compile("(\\S+)=[\"']?((?:.(?![\"']?\\s+(?:\\S+)=|[>\"']))*.)[\"']?");
 
         private static String tagPattern(String tagName) {
             return "\\s*" + tagName + "\\s*:\\s*";

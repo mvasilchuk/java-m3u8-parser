@@ -6,7 +6,7 @@ package net.chilicat.m3u8;
 public interface PlaylistInfo {
     public int getProgramId();
 
-    public int getBandWitdh();
+    public int getBandWidth();
 
     public String getCodecs();
 }

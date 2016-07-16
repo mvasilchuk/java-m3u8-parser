@@ -13,6 +13,8 @@ class ElementBuilder {
     private String title;
     private long programDate = -1;
     private boolean discontinuity = false;
+    private TvGuideAttributes tvGuideAttrributes;
+    private StreamAttributes streamAttributes;
 
     public ElementBuilder() {
 
@@ -97,7 +99,17 @@ class ElementBuilder {
     }
 
     public Element create() {
-        return new ElementImpl(playlistInfo, encryptionInfo, duration, uri, title, programDate,discontinuity);
+        return new ElementImpl(playlistInfo, encryptionInfo, duration, uri, title, programDate,discontinuity,
+                tvGuideAttrributes, streamAttributes);
     }
 
+    public ElementBuilder tvGuideAttributes(TvGuideAttributes tvGuideAttrributes) {
+        this.tvGuideAttrributes = tvGuideAttrributes;
+        return this;
+    }
+
+    public ElementBuilder streamAttributes(StreamAttributes streamAttributes) {
+        this.streamAttributes = streamAttributes;
+        return this;
+    }
 }

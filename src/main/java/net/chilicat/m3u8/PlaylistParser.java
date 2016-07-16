@@ -58,6 +58,10 @@ final class PlaylistParser {
         int targetDuration = -1;
         int mediaSequenceNumber = -1;
 
+        String tvGuideUrl = "";
+        int tvGuideShift = -1;
+        int deinterlace = 0;
+
         EncryptionInfo currentEncryption = null;
 
         while (scanner.hasNextLine()) {
@@ -67,6 +71,32 @@ final class PlaylistParser {
                 if (line.startsWith(EX_PREFIX)) {
                     if (firstLine) {
                         checkFirstLine(lineNumber, line);
+
+                        final Matcher attrMatcher = Patterns.EXTINF_ATTR.matcher(line.substring(EXTM3U.length()));
+                        while(attrMatcher.find()) {
+                            final String name = attrMatcher.group(1);
+                            final String value = attrMatcher.group(2);
+
+                            switch(name)
+                            {
+                                case "url-tvg": {
+                                    tvGuideUrl = value;
+                                    break;
+                                }
+                                case "deinterlace": {
+                                    deinterlace = Integer.valueOf(value);
+                                    break;
+                                }
+                                case "tvg-shift": {
+                                    tvGuideShift = Integer.valueOf(value);
+                                    break;
+                                }
+                                default: {
+                                    log.log(Level.FINE, "Unknown extm3u attribute " + name + " -> " + value);
+                                }
+                            }
+                        }
+
                         firstLine = false;
                     } else if (line.startsWith(EXTINF)) {
                         parseExtInf(line, lineNumber, builder);
@@ -117,7 +147,7 @@ final class PlaylistParser {
             lineNumber++;
         }
 
-        return new Playlist(Collections.unmodifiableList(elements), endListSet, targetDuration, mediaSequenceNumber);
+        return new Playlist(Collections.unmodifiableList(elements), endListSet, targetDuration, mediaSequenceNumber, tvGuideUrl, tvGuideShift, deinterlace);
     }
 
     private URI toURI(String line) {
@@ -169,11 +199,57 @@ final class PlaylistParser {
             throw new ParseException(line, lineNumber, "EXTINF must specify at least the duration");
         }
 
-        String duration = matcher.group(1);
-        String title = matcher.groupCount() > 1 ? matcher.group(2) : "";
+        TvGuideAttributes tvGuideAttributes = new TvGuideAttributes();
+        StreamAttributes streamAttributes = new StreamAttributes();
+        final String duration = matcher.group(1);
+        final String attributes = matcher.group(2);
+        final String title = matcher.group(3);
+
+        //System.out.println("Line: " + line + " -> attributes: " + attributes);
+
+        final Matcher attrMatcher = Patterns.EXTINF_ATTR.matcher(attributes);
+
+        while(attrMatcher.find())
+        {
+            final String name = attrMatcher.group(1);
+            final String value = attrMatcher.group(2);
+            //System.out.println("match: " + name + " -> " + value);
+
+            switch (name) {
+                case "tvg-shift": {
+                    tvGuideAttributes.setTimeShift(value);
+                    break;
+                }
+                case "tvg-name": {
+                    tvGuideAttributes.setName(value);
+                    break;
+                }
+                case "tvg-logo": {
+                    tvGuideAttributes.setLogo(value);
+                    break;
+                }
+                case "audio-track": {
+                    streamAttributes.setAudioTrack(value);
+                    break;
+                }
+                case "aspect-ratio": {
+                    streamAttributes.setAudioTrack(value);
+                    break;
+                }
+                default: {
+                    System.out.println("Unknown attribute: " + name + " -> " + value);
+                    break;
+                }
+            }
+        }
+
 
         try {
-            builder.duration(Double.valueOf(duration)).title(title);
+            builder
+                .duration(Double.valueOf(duration))
+                    .title(title)
+                    .tvGuideAttributes(tvGuideAttributes)
+                    .streamAttributes(streamAttributes);
         } catch (NumberFormatException e) {
             // should not happen because of 
             throw new ParseException(line, lineNumber, e);

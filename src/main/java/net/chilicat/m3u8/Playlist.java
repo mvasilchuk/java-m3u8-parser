@@ -1,5 +1,7 @@
 package net.chilicat.m3u8;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringReader;
@@ -55,8 +57,18 @@ public final class Playlist implements Iterable<Element> {
     private final boolean endSet;
     private final int targetDuration;
     private int mediaSequenceNumber;
+    private String tvGuideUrl = "";
+    private int tvGuideShift;
+    private int deinterlace;
 
-    Playlist(List<Element> elements, boolean endSet, int targetDuration, int mediaSequenceNumber) {
+    Playlist(List<Element> elements,
+             boolean endSet,
+             int targetDuration,
+             int mediaSequenceNumber,
+             @NotNull String tvGuidUrl,
+             int tvGuideShift,
+             int deinterlace)
+    {
         if (elements == null) {
             throw new NullPointerException("elements");
         }
@@ -64,6 +76,9 @@ public final class Playlist implements Iterable<Element> {
         this.elements = elements;
         this.endSet = endSet;
         this.mediaSequenceNumber = mediaSequenceNumber;
+        this.tvGuideUrl = tvGuidUrl;
+        this.tvGuideShift = tvGuideShift;
+        this.deinterlace = deinterlace;
     }
 
     public int getTargetDuration() {
@@ -86,6 +101,22 @@ public final class Playlist implements Iterable<Element> {
         return mediaSequenceNumber;
     }
 
+    @NotNull
+    public String getTvGuideUrl()
+    {
+        return tvGuideUrl;
+    }
+
+    public int getTvGuideShift()
+    {
+        return tvGuideShift;
+    }
+
+    public int getDeinterlace()
+    {
+        return deinterlace;
+    }
+
     @Override
     public String toString() {
         return "PlayListImpl{" +
@@ -93,6 +124,9 @@ public final class Playlist implements Iterable<Element> {
                 ", endSet=" + endSet +
                 ", targetDuration=" + targetDuration +
                 ", mediaSequenceNumber=" + mediaSequenceNumber +
+                ", tvGuideUrl=" + tvGuideUrl +
+                ", tvGuideShift=" + tvGuideShift +
+                ", deinterlace=" + deinterlace +
                 '}';
     }
 }

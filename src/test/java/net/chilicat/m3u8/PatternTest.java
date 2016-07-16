@@ -66,7 +66,7 @@ public class PatternTest extends TestCase {
             Matcher matcher = patter.matcher(param);
             assertEquals("Index: " + index, true, matcher.find());
             assertEquals("Index: " + index, true, matcher.matches());
-            assertEquals("Index: " + index, 200.0, Double.valueOf(matcher.group(1).trim()).doubleValue());
+            assertEquals("Index: " + index, 200.0, Double.valueOf(matcher.group(1).trim()));
             assertEquals("Index: " + index, "Title", matcher.group(2).trim());
 
             printGroups(index, matcher);

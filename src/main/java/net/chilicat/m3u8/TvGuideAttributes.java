@@ -20,9 +20,31 @@ package net.chilicat.m3u8;
 
  */
 public class TvGuideAttributes {
-    private int timeShift;
-    private String name;
-    private String logo;
-    private String audioTrack;
-    private String aspectRatio;
+    private String timeShift = null;
+    private String name = null;
+    private String logo = null;
+
+    public String getTimeShift() {
+        return timeShift;
+    }
+
+    public void setTimeShift(String timeShift) {
+        this.timeShift = timeShift;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
 }
